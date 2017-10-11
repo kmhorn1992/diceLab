@@ -1,0 +1,22 @@
+button {
+    background-color: red;
+    color: white;
+    height: 10em;
+    width: 20em;
+    
+}
+
+body{
+    background-color: blue;
+}
+
+.die {
+    background-color: black;
+    text-align: center;
+    border-radius: 6%;
+    height: 4em;
+    width: 4em;
+    margin: 1em;
+    color: white;
+     }
+  
