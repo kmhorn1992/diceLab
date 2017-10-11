@@ -30,20 +30,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     // Sum of dice button
-    function sum() {
-        let total = 0;
-    
-        dieArray.forEach(function(die) {
-            total += dieNum.value;
-        });
-    
-        alert(`the sum of all die values is ${total}`);
-    }
+    sumDice.addEventListener('click', function() {
+    var sum = diceAdd.reduce(function(acc, curr) {
+        return acc + curr.value;
+    }, 0);
+    alert(`The sum of all dice on screen is ${sum}`);
 });
-// Randomizer function
+
+// random function//
 function getRandom() {
     return (Math.floor(Math.random() * 6) + 1);
 }
+
+//constructor function//
 var Die = function (value) {
     this.value = value;
     this.div = document.createElement('div');
@@ -67,8 +66,9 @@ Die.prototype.roll = function () {
 
 // removes the Die //
 Die.prototype.plzRemove = function() {
-    dieAdd.splice(dieAdd.indexOf(this), 1);
+    var moveThis =diceAdd.indexOf(this);
+    diceAdd.splice(moveThis, 1);
     this.div.plzRemove();
 };
 
-
+});

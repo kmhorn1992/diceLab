@@ -11,12 +11,13 @@ body{
 }
 
 .die {
-    background-color: black;
+    background-color: yellowgreen;
     text-align: center;
-    border-radius: 6%;
-    height: 4em;
-    width: 4em;
+    border-radius: 1em;
+    height: 10em;
+    width: 10em;
     margin: 1em;
+    display: inline-block;
     color: white;
      }
   
